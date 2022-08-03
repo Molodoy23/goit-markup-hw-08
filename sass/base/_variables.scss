@@ -1,0 +1,20 @@
+$main-color: #2196f3;
+$second-color: #212121;
+$description-color: #757575;
+$title-color: #ffffff;
+$bg-hero-and-footer: #2f303a;
+$bg-section-team: #f5f4fa;
+$bg-footer-icons: rgba(255, 255, 255, 0.1);
+$icon-color: #afb1b8;
+$second-icon-color: #000;
+
+$icons: 'icon-satellite', 'icon-watch', 'icon-graffic', 'icon-astronaut';
+
+@mixin flexCenter($type: flex) {
+  display: $type;
+  align-items: center;
+}
+main,
+address {
+  font-family: 'Roboto';
+}

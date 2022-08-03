@@ -1,0 +1,46 @@
+.work-section {
+  display: none;
+  @media screen and (min-width: 1140px) {
+    display: block;
+  }
+  padding-top: 94px;
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $second-color;
+    margin-bottom: 50px;
+  }
+}
+.work-gallery {
+  display: flex;
+  padding-bottom: 94px;
+  &__items {
+    position: relative;
+    max-width: none;
+  }
+  &__items:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__photo {
+    max-width: max-content;
+    width: 370px;
+  }
+  &__description {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    color: $title-color;
+    background: rgba(47, 48, 58, 0.8);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+}
