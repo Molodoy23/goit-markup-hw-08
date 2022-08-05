@@ -211,6 +211,11 @@ address {
   transform: scaleX(0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 768px) {
+  .site-nav__link::after {
+    display: none;
+  }
+}
 .site-nav__link-active::before {
   position: absolute;
   content: "";
@@ -219,6 +224,11 @@ address {
   background-color: #2196f3;
   bottom: 0;
   border-radius: 2px;
+}
+@media screen and (max-width: 768px) {
+  .site-nav__link-active::before {
+    display: none;
+  }
 }
 .site-nav__link:hover, .site-nav__link:focus {
   color: #2196f3;
@@ -243,6 +253,8 @@ address {
 }
 @media screen and (max-width: 767px) {
   .site-nav__logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
     font-family: "Raleway";
     font-style: normal;
     font-weight: 700;
@@ -273,6 +285,13 @@ address {
     display: flex;
     margin-right: 84px;
     margin-left: 88px;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .site-nav__list {
+    display: flex;
+    margin-left: 93px;
+    margin-right: 0;
   }
 }
 
@@ -316,6 +335,12 @@ address {
     margin-top: 32px;
   }
 }
+@media screen and (min-width: 1140px) {
+  .list-contacts {
+    display: flex;
+    align-items: center;
+  }
+}
 .list-contacts__link {
   display: flex;
   align-items: center;
@@ -343,12 +368,31 @@ address {
     letter-spacing: 0.02em;
   }
 }
+@media screen and (min-width: 1140px) {
+  .list-contacts__link {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 0.87;
+  }
+}
 @media screen and (max-width: 767px) {
   .list-contacts__link-phone {
     color: #2196f3;
     font-size: 34px;
     line-height: 0.85;
     letter-spacing: 0.02em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .list-contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .list-contacts__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 30px;
   }
 }
 .list-contacts__link:hover, .list-contacts__link:focus {
@@ -396,9 +440,11 @@ address {
   justify-content: space-around;
   align-items: center;
 }
-.main-header__group {
-  display: flex;
-  justify-content: center;
+@media screen and (max-width: 1139px) {
+  .main-header__group {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -640,6 +686,7 @@ address {
 }
 
 .team {
+  width: 100%;
   background-color: #f5f4fa;
   padding-bottom: 60px;
 }
@@ -1114,6 +1161,11 @@ address {
     justify-content: center;
   }
 }
+@media screen and (min-width: 1140px) {
+  .submit {
+    display: block;
+  }
+}
 @media screen and (max-width: 767px) {
   .submit {
     display: flex;
@@ -1158,6 +1210,7 @@ address {
 @media screen and (min-width: 1140px) {
   .form-subscribe {
     display: flex;
+    align-items: end;
   }
 }
 

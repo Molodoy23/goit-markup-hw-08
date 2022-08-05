@@ -6,16 +6,29 @@
     justify-content: center;
     padding-top: 94px;
   }
-
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
   margin-bottom: 50px;
   &__item:not(:nth-child(3)) {
-    margin-right: 8px;
+    @media screen and (max-width: 768px) {
+      margin-right: 8px;
+    }
+  }
+  &__item:not(:last-child) {
+    @media screen and (min-width: 768px) {
+      margin-right: 8px;
+    }
   }
   &__item:nth-child(5) {
-    margin-top: 15px;
+    @media screen and (max-width: 768px) {
+      margin-top: 15px;
+    }
   }
   &__item:nth-child(4) {
-    margin-top: 15px;
+    @media screen and (max-width: 768px) {
+      margin-top: 15px;
+    }
   }
   &__buttoms {
     font-family: 'Roboto';

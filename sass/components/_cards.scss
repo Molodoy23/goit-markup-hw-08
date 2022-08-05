@@ -1,21 +1,27 @@
 .cards-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   padding-bottom: 60px;
   @media screen and (min-width: 1140px) {
     padding-bottom: 94px;
 
-    flex-basis: calc(100% / 3 - 20px);
+    flex-basis: calc(100% / 3 - 40px);
   }
 
   &__item {
-    margin-top: 15px;
+    @media screen and (max-width: 767px) {
+      width: 450px;
+      margin-bottom: 15px;
+      margin-top: 15px;
+    }
+    @media screen and (min-width: 768px) {
+      flex-basis: calc(100% / 2 - 20px);
+    }
 
-    margin-bottom: 15px;
     border: 1px solid #eeeeee;
     @media screen and (min-width: 1140px) {
-      margin-right: 30px;
+      flex-basis: calc(100% / 3 - 20px);
+      margin-right: 15px;
     }
   }
 
@@ -36,6 +42,27 @@
   }
   &__item:nth-child(-n + 3) {
     margin-top: 0px;
+  }
+  &__item:not(:last-child) {
+    @media screen and (min-width: 767px) {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1139px) {
+      margin-bottom: 0;
+    }
+  }
+  &__item:nth-child(odd) {
+    @media screen and (min-width: 767px) {
+      margin-right: 30px;
+    }
+    @media screen and (min-width: 1139px) {
+      margin-right: 0;
+    }
+    &__item:nth-child(-n + 3) {
+      @media screen and (min-width: 1139px) {
+        margin-right: 0;
+      }
+    }
   }
 }
 .card-overlay {
@@ -81,4 +108,8 @@
     color: $description-color;
     padding-top: 4px;
   }
+}
+.card-image {
+  width: 100%;
+  height: 100%;
 }
