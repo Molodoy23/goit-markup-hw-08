@@ -14,7 +14,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1139px) {
     width: 450px;
   }
   width: 530px;
@@ -93,7 +93,7 @@
     letter-spacing: 0.03em;
     color: #757575;
     align-items: center;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1139px) {
       font-size: 12px;
       line-height: 0.85;
     }
@@ -189,7 +189,7 @@
   height: 120px;
 }
 .js-speaker-form {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1139px) {
     padding-right: 40px;
     padding-left: 40px;
   }

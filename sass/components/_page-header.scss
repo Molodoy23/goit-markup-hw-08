@@ -104,6 +104,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
     z-index: 999;
     background-color: $title-color;
     padding-left: 40px;
@@ -138,9 +139,6 @@
     color: $main-color;
   }
   &__list {
-    @media screen and (max-width: 767px) {
-      margin-bottom: 302px;
-    }
     @media screen and (min-width: 768px) {
       display: flex;
       margin-right: 84px;
@@ -172,6 +170,7 @@
 }
 .site-nav__menu.is-open {
   display: block;
+  position: fixed;
 }
 .site-nav__button.is-open > .site-nav__logo {
   display: none;
