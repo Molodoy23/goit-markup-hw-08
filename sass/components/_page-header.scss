@@ -3,13 +3,13 @@
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  width: 480px;
+  max-width: 480px;
 
   @media screen and (min-width: 768px) {
-    width: 768px;
+    max-width: 768px;
   }
   @media screen and (min-width: 1140px) {
-    width: 1140px;
+    max-width: 1200px;
   }
 }
 .page-header {
@@ -179,6 +179,7 @@
   @media screen and (max-width: 767px) {
     display: flex;
     flex-flow: wrap-reverse;
+    flex-direction: column-reverse;
     &__item:not(:last-child) {
       margin-top: 32px;
     }
@@ -290,6 +291,13 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
+}
+.group-sive__nav {
+  position: relative;
+}
+.group-list__contacts {
+  position: absolute;
+  bottom: 0;
 }
 .site-nav__item:hover .site-nav__link::after {
   transform: scaleX(1);

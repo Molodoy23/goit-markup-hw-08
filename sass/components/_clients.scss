@@ -19,6 +19,9 @@
 .clients-list {
   display: inline-flex;
   flex-wrap: wrap;
+  @media screen and (max-width: 479px) {
+    justify-content: center;
+  }
   @media screen and (min-width: 768px) {
     padding-bottom: 60px;
     justify-content: center;
@@ -34,14 +37,16 @@
   &__item {
     @media screen and (min-width: 768px) {
       padding: 16px 32px;
-      width: 226px;
+      max-width: 226px;
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
       margin-top: 30px;
     }
     @media screen and (min-width: 1140px) {
-      width: 170px;
+      max-width: 170px;
+      width: 100%;
       margin-top: 50px;
     }
     @media screen and (max-width: 767px) {
@@ -73,6 +78,14 @@
   &__item:nth-child(2n + 1) {
     @media screen and (max-width: 767px) {
       margin-right: 30px;
+    }
+    @media screen and (max-width: 479px) {
+      margin-right: 0px;
+    }
+  }
+  &__item:last-child {
+    @media screen and (max-width: 479px) {
+      margin-top: 30px;
     }
   }
   &__item:not(:nth-last-child(-n + 2)) {
