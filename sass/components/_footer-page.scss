@@ -30,9 +30,6 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: $main-color;
-  @media screen and (max-width: 1139px) {
-    padding-left: 31px;
-  }
   margin-bottom: 20px;
   &__span {
     color: $title-color;
@@ -123,7 +120,7 @@
   }
 }
 .section-adress {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1139px) {
     text-align: center;
   }
   @media screen and (min-width: 768px) {
